@@ -1,0 +1,8 @@
+server:
+    image: instapurge:latest
+    ports:
+    - 5000:5000
+    volumes:
+    - ./instapurge:/usr/src/instapurge/instapurge
+    environment:
+    - CLIENT_SECRET

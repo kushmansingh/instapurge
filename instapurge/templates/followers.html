@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Instapurge</title>
+<h1>Your followers</h1>
+<ul>
+  {% for f in followers %}
+    <li>{{ f.username }} whose real name is {{ f.full_name }}
+  {% else %}
+    <li><em>You have no followers sadface</em>
+  {% endfor %}
+</ul>
